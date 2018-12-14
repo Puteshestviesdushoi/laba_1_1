@@ -1,0 +1,15 @@
+#!/bin/bash
+echo 1. Сзда�л пап�к
+mkdir papka
+cd papka
+>file.txt
+echo 'sdam labu'>file.txt
+ls
+cd..
+mkdir papka2
+cd papka2
+>aa.txt
+cp papka/file.txt papka2/aa.txt
+cd..
+rm -rf papka
+

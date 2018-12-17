@@ -10,6 +10,6 @@ mkdir papka2
 cd papka2
 >aa.txt
 cp papka/file.txt papka2/aa.txt
-cd..
+cd ..
 rm -rf papka
 

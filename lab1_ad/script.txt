@@ -1,0 +1,22 @@
+#!/bin/bash
+mkdir tmp
+cd tmp
+wget http://factorized.net/crusoe.txt
+touch f1.txt
+touch f2
+touch f3.txt
+echo "мы нашли все файлы с расширением .тхт находясь вне папки тмп"
+cd ..
+find ./tmp -name "*.txt"
+echo "Найдё все строки с нужные"
+cd tmp
+grep "Friday" crusoe.txt
+echo "Hello World!" > file.txt
+echo "Hello World!" >> file.txt
+ls > list.txt
+cd ..
+echo "избавимся от мусора"
+cd
+cd ..
+find -name "*.txt" >hiri/listofalltextfiles.txt 2>/dev/null
+cd hirvi

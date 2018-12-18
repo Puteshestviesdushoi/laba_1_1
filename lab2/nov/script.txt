@@ -1,0 +1,6 @@
+#!bin/bash
+cd
+touch .text.txt
+ls
+ls -a
+find -name ".*" 2>/dev/null

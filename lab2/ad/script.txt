@@ -1,0 +1,19 @@
+#!bin/bash
+cd
+whereis cat less grep find
+echo $PATH
+mkdir temp
+cd temp
+echo 'int main() {
+printf("Andrezzz!\n");
+return 0;
+}' > script.c
+gcc -include stdio.h script.c -o script.exe
+./script.exe
+cd ..
+./temp/script.exe
+export PATH=$PATH:/usr/temp/
+echo $PATH
+script.exe
+rm -rf script.c
+

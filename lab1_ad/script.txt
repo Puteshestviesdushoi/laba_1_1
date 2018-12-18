@@ -18,5 +18,5 @@ cd ..
 echo "избавимся от мусора"
 cd
 cd ..
-find -name "*.txt" >hiri/listofalltextfiles.txt 2>/dev/null
-cd hirvi
+find -name "*.txt" > tmp 2>/dev/null
+

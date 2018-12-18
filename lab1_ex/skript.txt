@@ -1,0 +1,13 @@
+#!/bin/bash
+wget http://factorized.net/crusoe.txt
+echo "task1"
+grep -o 'Friday' crusoe.txt | wc -l
+echo "task2"
+sed -i s/Friday/Saturday/g crusoe.txt
+rm crusoe.txt
+echo "task3"
+echo "1 2
+2 2
+3 7" > input.txt
+<input.txt awk '{sum+=$1; sum1+=$2} END {print sum FS sum1}' > count.txt
+cat count.txt

@@ -1,0 +1,25 @@
+#!/bin/bash
+cd
+touch shared.txt
+echo "laba daba dab dab" > shared.txt
+cat shared.txt
+ls -l shared.txt
+sudo chmod 400 shared.txt 
+ls -l shared.txt
+sudo useradd soset
+sudo mkdir /usr/soset
+sudo chown soset:soset/usr/soset
+sudo passwd soset
+sudo -R soset:soset shared.txt
+sudo chmod 700 shared.txt
+su -c "echo 'privet' >>shared.txt
+ls -l shared.txt
+
+mkdir sharedpap
+sudo chown -R soset:soset/usr/soset
+sudo chmod 700 /usr/sharedpap
+ls -la
+sudo rm -rf sgared.txt
+sudo rm -rf sharedpap
+sudo deluser --remove-all-files soset 2>/dev/null
+

@@ -1,0 +1,15 @@
+#!bin/bash
+if [ $3 = 'add' ]
+then
+k=$(($1 + $2))
+fi
+if [ $3 = 'sub' ]
+then
+k=$(($1 - $2))
+fi
+if [ $3 = 'mul' ]
+then
+k=$(($1 * $2))
+fi
+echo $k
+

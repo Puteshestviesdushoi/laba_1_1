@@ -1,0 +1,22 @@
+#!/bin/bash
+wget http://factorized.net/crusoe.txt
+echo "start s 'z'"
+egrep -n "\bz" crusoe.txt > file.txt
+echo "kol-vo 16 let"
+egrep -n "[[:alpha:]]{16}" crusoe.txt >file1.txt
+echo "word 'a'"
+egrep -n "\sa[[:alpha:]]*c\b" crusoe.txt > file2.txt
+echo " word ab not a"
+egrep -n "\sab[^o][[:alpha]]*\b" crusoe.txt >file3.txt
+
+echo "TTASK2"
+
+wget http://factorized.net/patterns.txt
+echo " Tolko sifri"
+egrep -n "^[0-9]+$" patterns.txt > file4.txt
+echo " tolko bukvi"
+egrep -n "n^[[:alpha:]]+$" patterns.txt >file5.txt
+
+echo "TTASK eeexxy"
+
+egrep -n "^[ABEKMHOPCTYX][0-9]{3}[ABEKMHOPCTYX]{2}[0-9]{2,3}$" patterns.txt > file6.txt
